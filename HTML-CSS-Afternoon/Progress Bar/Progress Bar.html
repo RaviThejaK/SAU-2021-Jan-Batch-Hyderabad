@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #ProgressBar {
+            position: relative;
+            height: 50px;
+            width: 0px;
+            animation-name: Progress;
+            animation-duration: 10s;
+            border-radius: 25px;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes Progress {
+            from {
+                background-color: violet;
+                width: 0%;
+            }
+
+            to {
+                background-color: red;
+                width: 100%;
+            }
+
+            /*
+
+0% {
+background-color: red;
+height: 50px;
+width: 0px;
+
+}
+
+20% {
+background-color: orange;
+height: 50px;
+width: 0px;
+
+}
+
+40% {
+background-color: yellow;
+height: 50px;
+width: 150px;
+
+}
+
+60% {
+background-color: blueviolet;
+height: 50px;
+width: 600px;
+
+}
+
+80% {
+background-color: green;
+height: 50px;
+width: 750px;
+
+}
+
+100% {
+background-color: red;
+height: 50px;
+width: 100px;
+
+}
+
+            */
+
+        }
+    </style>
+
+    <title>Progress Bar</title>
+</head>
+
+
+<body>
+    <div id="ProgressBar"></div>
+</body>
+
+</html>
