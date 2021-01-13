@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body style="background-color: lightblue;">
+
+    <h1 style="margin-top: 25px;margin-left: 25%;">Addtion Operation</h1>
+
+    <pre style="margin-top: 15px;margin-left: 25%;">
+        Enter two numbers in the two input feilds 
+        Click the Addition Equals button
+        Result will be displayed
+    </pre>
+
+    <div style="margin-top: 5%;margin-left: 25%;">
+        <label style="font-size: 20px;">Number 1 </label>
+        <input style="height: 30px; width: 200px;padding-left: 25px;" type="number" placeholder="Enter First Number"
+            id="Number1" />
+    </div>
+
+    <div style="margin-top: 0%;margin-left: 37%;">
+        <label style="font-size: 40px;">+</label>
+    </div>
+
+    <div style="margin-top: 0%;margin-left: 25%;">
+        <label style="font-size: 20px;">Number 2 </label>
+        <input style="height: 30px; width: 200px;padding-left: 25px;" type="number" placeholder="Enter Second Number"
+            id="Number2" />
+    </div>
+
+    <div style="margin-top: 20px;margin-left: 33%;">
+        <button type="button" class=" btn btn-success" onclick="Addition()">Addition Equals</button>
+    </div>
+
+
+    <div style="margin-top: 25px;margin-left: 26%;padding-left: 5px;">
+        <label style="font-size: 20px;padding-right: 20px;">Result </label>
+        <input style="height: 30px; width: 200px;padding-left: 25px;" type="number" placeholder="Enter Second Number"
+            id="Result" disabled />
+    </div>
+
+    <script>
+
+        function Addition() {
+
+            var N1 = parseInt(document.getElementById("Number1").value);
+            var N2 = parseInt(document.getElementById("Number2").value);
+            var result = N1 + N2;
+
+            document.getElementById("Result").value = result;
+        }
+    </script>
+
+</body>
+
+</html>

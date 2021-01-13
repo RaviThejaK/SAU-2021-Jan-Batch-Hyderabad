@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body style="background-color: lightblue;">
+    <h1 style="margin-top: 25px;margin-left: 25%;">Simple Alert</h1>
+
+    <pre style="margin-top: 15px;margin-left: 20%;">
+        Click the button to pop up the alert.
+    </pre>
+
+    <div style="margin-top: 3%;margin-left: 28%;">
+        <button type="button" class=" btn btn-success" onclick="ButtonClicked()">Click This Button </button>
+
+    </div>
+
+
+    <script>
+
+        function ButtonClicked() {
+
+            alert("Hello World!!");
+            setInterval(function () {
+                alert.close();
+            }, 1000);
+
+
+        }
+    </script>
+
+</body>
+
+</html>
