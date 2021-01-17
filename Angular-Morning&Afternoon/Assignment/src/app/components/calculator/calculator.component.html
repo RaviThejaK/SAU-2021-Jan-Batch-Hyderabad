@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+
+
+
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <div>
+        <Button style="margin-left: 100px;" id="btn"><a routerLink="/forms" routerLinkActive="active">Redirect to Forms
+                Page</a></Button>
+    </div>
+
+    <div class="container-fluid bg">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-xs-12"></div>
+            <div class="col-sm-4 col-md-4 col-xs-12">
+
+                <!--MAIN-->
+
+                <div class="calc-container">
+                    <div>
+                        <h1 class="head">Calculator</h1>
+                    </div>
+                    <div class="space"></div>
+                    <div class="group">
+                        <label>Number 1 </label>
+                        <input type="number" name="Input1" [(ngModel)]="Input1" placeholder="Enter First Number">
+                    </div>
+                    <div class="group">
+                        <label>Number 2 </label>
+                        <input type="number" name="Input2" [(ngModel)]="Input2" placeholder="Enter Second Number">
+                    </div>
+
+                    <div id="math">
+                        <button type="submit" class="btn btn-dark " (click)="addition()"
+                            style="font-size: 25px;">+</button>
+                        <button type="submit" class="btn btn-dark " (click)="subtraction()"
+                            style="font-size: 25px;">-</button>
+                        <button type="submit" class="btn btn-dark " (click)="multiplication()"
+                            style="font-size: 25px;">*</button>
+                        <button type="submit" class="btn btn-dark " (click)="division()"
+                            style="font-size: 25px;">/</button>
+                    </div>
+                    <div class="space"></div>
+                    <div>
+                        <label>Result is </label>
+                        <input type="number" name="Result" [(ngModel)]="Result" disabled>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
