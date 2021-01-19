@@ -1,0 +1,26 @@
+
+
+#data{
+    margin-left: 10%;
+}
+
+  
+  #data td, #data th, #data tr{
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 150px;
+    height: 15px;
+  }
+  
+  #data tr:hover {background-color: rgb(53, 230, 243);}
+  
+ 
+  
+  #data th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 25px;
+    text-align: left;
+    background-color: rgb(119, 143, 163);
+    color: white;
+  }
