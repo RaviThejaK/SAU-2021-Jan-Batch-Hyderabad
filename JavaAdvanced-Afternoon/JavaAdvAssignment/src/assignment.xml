@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<assignments>
+    <assignment id="1">
+        <name>advanced_java</name>
+        <review>in progress</review>
+    </assignment>
+    <assignment id="2">
+        <name>java_basics</name>
+        <review>submitted</review>
+    </assignment>
+</assignments>
